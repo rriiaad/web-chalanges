@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 4vw;
+}
+
+.title {
+  padding-bottom: 15vh;
+  font-size: 19px;
+  font-family: "Chakra Petch", sans-serif;
+  color: #000000;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper div {
+  flex: 1;
+}
+
+.img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+img {
+  width: 530px;
+  height: 459px;
+  object-fit: cover;
+}
+
+.title2 {
+  font-size: 54px;
+  font-family: "Chakra Petch", sans-serif;
+  color: #333333;
+  margin-bottom: 3vh;
+}
+
+.paragraphe {
+  font-size: 22px;
+  font-family: "PT Mono", monospace;
+  color: #333333;
+  margin-bottom: 5vh;
+}
+
+.button {
+  background-color: #333333;
+  border: solid 2px #333333;
+  width: 210px;
+  height: 59px;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-family: "Chakra Petch", sans-serif;
+  color: #fff;
+  transition: 0.3s all ease-in-out;
+}
+.button:hover {
+  cursor: pointer;
+  color: #333333;
+  background: #fff;
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    padding: 2vw;
+  }
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .title {
+    padding-bottom: 5vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  img {
+    width: 265px;
+    height: 230px;
+  }
+  .title2 {
+    font-size: 40px;
+  }
+  .paragraphe {
+    font-size: 18px;
+  }
+}
